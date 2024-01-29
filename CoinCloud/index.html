@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>CoinCloud</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+
+<body>
+    <!-- Header-Section -->
+    <div class="header">
+        <div class="top-left">
+            <h1>CoinCloud</h1>
+        </div>
+        <div class="top-mid">
+            <a href="#home">Home</a>
+            <a href="#market">Market</a>
+            <a href="#choose-us">Choose us</a>
+            <a href="#about-us">About us</a>
+        </div>
+        <div class="top-right">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-solid fa-bars side-btn" id="sidebar-on" style="font-size: 1.3rem;"></i></a>
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="cross" id="sidebar-off">
+            <a href="#"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <!-- <h1><span>C</span>oin<span>C</span>loud</h1> -->
+        <div class="side-cont"> <a href="#home">Home</a></div>
+        <div class="side-cont"><a href="#market">Market</a></div>
+        <div class="side-cont"> <a href="#choose-us">Choose us</a></div>
+        <div class="side-cont"> <a href="#about-us">About us</a></div>
+    </div>
+
+    <!-- Hero-Section -->
+    <div class="hero-section" id="home">
+        <!-- <div class="left-hero">
+            <img src="https://www.pngall.com/wp-content/uploads/1/Bitcoin-PNG-Pic.png">
+        </div> -->
+        <div class="mid-hero">
+            <h1>
+                The World’s Premier
+                <br>
+                <span>Crypto Trading Platform</span>
+            </h1>
+            <h2>Buy Bitcoin, Ethereum, and 250+ cryptocurrencies</h2>
+            <p><i class="fa-solid fa-circle-check" style="color: #74C0FC;"></i> Trade with 20+ fiat currencies and
+                Apple/Google Pay. <br>
+                <i class="fa-solid fa-circle-check" style="color: #74C0FC;"></i> Leader in regulatory compliance and
+                security certifications. <br>
+                <i class="fa-solid fa-circle-check" style="color: #74C0FC;"></i> Trusted by over 80 million users
+                worldwide.
+            </p>
+
+
+        </div>
+        <!-- <div class="right-hero">
+            <img src="https://cdn-icons-png.flaticon.com/512/6001/6001368.png">
+        </div> -->
+
+    </div>
+
+    <!-- Hero-coins -->
+    <a href="#top-crypt"> <div class="explore-btn">
+        <button>Check Crypto Prices <i class="fa-solid fa-chart-line"></i></button>
+    </div></a>
+   
+
+    <!-- down -arrow -->
+    <a href="#top-crypt"><div class="arrow" >
+        <i class="fa-solid fa-arrow-down"></i>
+    </div></a>
+    
+    <!-- HR -->
+    <hr>
+
+    <!-- Top-Crypto -->
+    <div class="top-coin" id="top-crypt">
+        <h1 class="top-heading">Top Cryptocurrencies by Market Capitalization</h1>
+        <div class="first-row">
+            <div class="t-coin">
+                <img src="https://coindom-crypto-search.vercel.app/static/media/bitcoin.e146d46fb598ae0d8f43.png">
+                <h2>Bitcoin</h2>
+                <h4><span id="btc-t"></span> %</h4>
+                <h3>$ <span id="bitcoin"></span></h3>
+            </div>
+            <div class="t-coin">
+                <img src="https://cdn-icons-png.flaticon.com/512/6001/6001368.png">
+                <h2>Ethereum</h2>
+                <h4><span id="eth-t"></span> %</h4>
+                <h3>$ <span id="ethereum"></span></h3>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="t-coin">
+                <img src="https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/cardano_ada-512.png"
+                    alt="">
+                <h2>Cardano</h2>
+                <h4><span id="cdn-t"></span> %</h4>
+                <h3>$ <span id="cardano"></span></h3>
+            </div>
+            <div class="t-coin">
+                <img src="https://cdn-icons-png.flaticon.com/512/6001/6001356.png">
+                <h2>Dogecoin</h2>
+                <h4><span id="doge-t"></span> %</h4>
+                <h3>$ <span id="dogecoin"></span></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Market-Update -->
+    <div class="container" id="market">
+        <div class="market-update">
+            <h2>Market Update</h2>
+            <div class="coin-list">
+                <div class="coin-list-top">
+                    <p>Coin</p>
+                    <p>Price</p>
+                    <p>24hr change</p>
+                    <p>Market cap</p>
+                </div>
+                <div class="coin-list-row">
+                    <p>Bitcoin</p>
+                    <p>$ <span id="btc-r"></span> </p>
+                    <p><span id="btc-ch"></span>%</p>
+                    <p>$<span id="btc-cap"></span> </p>
+                </div>
+                <div class="coin-list-row">
+                    <p>Ethereum</p>
+                    <p>$ <span id="eth-r"></span> </p>
+                    <p><span id="eth-ch"></span>%</p>
+                    <p>$<span id="eth-cap"></span> </p>
+                </div>
+                <div class="coin-list-row">
+                    <p>Cardano</p>
+                    <p>$ <span id="cdn-r"></span> </p>
+                    <p><span id="cdn-ch"></span>%</p>
+                    <p>$<span id="cdn-cap"></span> </p>
+                </div>
+                <div class="coin-list-row">
+                    <p>Dogecoin</p>
+                    <p>$ <span id="doge-r"></span> </p>
+                    <p><span id="doge-ch"></span>%</p>
+                    <p>$<span id="doge-cap"></span> </p>
+                </div>
+                <div class="coin-list-row">
+                    <p>Tether</p>
+                    <p>$ <span id="thr-r"></span> </p>
+                    <p><span id="thr-ch"></span>%</p>
+                    <p>$<span id="thr-cap"></span> </p>
+                </div>
+                <div class="coin-list-row">
+                    <p>USDC</p>
+                    <p>$ <span id="usd-r"></span> </p>
+                    <p><span id="usd-ch"></span>%</p>
+                    <p>$<span id="usd-cap"></span> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why-choose-us -->
+    <div class="why" id="choose-us">
+        <div class="why-img-one w-img">
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/cryptocurrency-analysis-4307580-3581349.png">
+        </div>
+        <div class="why-text">
+            <h1>WHY <span>CHOOSE US</span></h1>
+            <div class="box">
+                <h2>CONNECT <span>YOUR WALLET</span>
+                </h2><br>
+                <p>Use Trust Wallet, Metamask or to connect to the app.</p>
+            </div>
+            <div class="box">
+                <h2>SELECT YOUR <span>QUANTITY</span></h2><br>
+                <p>Upload your crypto and set a title, description and price.</p>
+            </div>
+            <div class="box">
+                <h2>CONFIRM <span>TRANSACTION</span></h2><br>
+                <p>Earn by selling your crypto on our marketplace.</p>
+            </div>
+        </div>
+        <div class="why-img-two w-img">
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/bitcoin-crypto-coin-in-gift-box-5774995-4841865.png"
+                alt="">
+        </div>
+    </div>
+
+    <!-- Our vision -->
+    <div class="vision">
+        <div class="vis1">
+            <h2>OUR VISION</h2>
+            <h1>Cryptocurrency in <br>
+                Every Wallet™</h1>
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/giving-bitcoin-4867195-4061620.png" alt="">
+        </div>
+        <div class="vis2">
+            <div class="vis-left">
+                <h4>Founded in</h4>
+                <h2>2020</h2>
+            </div>
+            <div class="vis-right">
+                <h4>Users</h4>
+                <h2>80M+</h2>
+            </div>
+        </div>
+    </div>
+    <!-- Join-us -->
+    <div class="join-btn" id="about-us">
+        <button>Download App <i class="fa-solid fa-qrcode"></i></button>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <p>Copyright © 2020 - 2024 CoinCloud.com. All rights reserved.</p>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
